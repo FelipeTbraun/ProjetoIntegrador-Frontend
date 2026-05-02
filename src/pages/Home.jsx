@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import "../styles/home.css"
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -20,7 +21,7 @@ function Home() {
           </p>
 
           <a href="/formularios" className="hero-btn">
-            Abrir um Chamado
+             <i className="fa-solid fa-bullhorn"></i> Abrir Chamado
           </a>
         </div>
       </section>
@@ -35,29 +36,35 @@ function Home() {
         </div>
 
         <div className="grid-forms">
-          <a href="/formularios" className="form-card">
+         <a href="/formularios" className="form-card">
+            <div className="icon-box"><i className="fa-solid fa-road"></i></div>
             <h3>Vias Públicas</h3>
-            <p>Buracos, calçadas danificadas...</p>
+            <p>Buracos na rua, calçadas danificadas...</p>
           </a>
 
           <a href="/formularios" className="form-card">
+            <div className="icon-box"><i className="fa-solid fa-bolt"></i></div>
             <h3>Iluminação</h3>
             <p>Postes apagados ou fios caídos.</p>
           </a>
 
-          <a href="/formularios" className="form-card">
+         <a href="/formularios" className="form-card">
+            <div className="icon-box"><i className="fa-solid fa-traffic-light"></i></div>
             <h3>Trânsito</h3>
             <p>Semáforos quebrados ou sinalização.</p>
           </a>
 
           <a href="/formularios" className="form-card">
+            <div className="icon-box"><i className="fa-solid fa-tree"></i></div>
             <h3>Meio Ambiente</h3>
             <p>Árvores caídas ou lixo acumulado.</p>
           </a>
         </div>
       </section>
+    <Footer />
     </>
-  );
+ 
+);
 }
 
 export default Home;

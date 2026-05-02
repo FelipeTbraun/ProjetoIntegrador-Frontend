@@ -1,3 +1,5 @@
+import logo from "../assets/indaiatuba.webp";
+import "../styles/navbar.css";
 function Navbar() {
   return (
     <nav className="topo">
@@ -13,9 +15,9 @@ function Navbar() {
 
           <li className="logo-item">
             <img
-              src="https://preview.redd.it/3qe3e6awkjb01.png"
+              src={logo}
               alt="Logo"
-              className="Iogo"
+              className="logo"
             />
           </li>
 

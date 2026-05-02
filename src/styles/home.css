@@ -1,245 +1,223 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding-top: 120px; /* Espaço para a navbar fixa */
+        }
 
-html {
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-}
+        /* =========================================
+           NOVO CSS - HOME PAGE (ESTILO MODERNO)
+           ========================================= */
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f0f0;
-    padding-top: 120px;
-}
+        :root {
+            --primary-accent: #ff4757; /* Vermelho/Laranja para Ação (SOS) */
+            --dark-bg: #1e1e1e;
+            --light-text: #f0f0f0;
+            --card-bg: #ffffff;
+        }
 
-/* VARIÁVEIS */
-:root {
-    --primary-accent: #ff4757;
-    --dark-bg: #1e1e1e;
-    --light-text: #f0f0f0;
-    --card-bg: #ffffff;
-}
+        /* Container Global */
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-/* NAVBAR */
-nav.topo {
-    background-color: #000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 0;
-    z-index: 1000;
-    transition: all 0.25s ease;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
+        /* --- HERO SECTION (Principal) --- */
+        .hero {
+            /* Imagem de fundo da cidade */
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), 
+                        url('https://images.adsttc.com/media/images/60d3/4ebd/5373/1456/acc3/9f3c/large_jpg/parque-ecologico-de-indaiatuba-visto-de-cima-sao-paulo-brasil-credito-erich-sacco.jpg?1624461036');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            border-radius: 0 0 30px 30px; /* Curva suave na parte inferior */
+            margin: -20px 20px 40px 20px; /* Ajuste para criar efeito de card flutuante */
+            padding: 4rem 2rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+        }
 
-.navbar-container {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+            font-weight: 800;
+        }
 
-.sosi-btn {
-    display: flex;
-    align-items: center;
-    color: #fff;
-    font-size: 28px;
-    font-weight: 700;
-    text-decoration: none;
-}
+        .hero h1 span {
+            color: var(--primary-accent);
+        }
 
-.sosi-btn .i {
-    color: #ff4757;
-}
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin-bottom: 2.5rem;
+            color: #ddd;
+        }
 
-.menu {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-}
+        .hero-btn {
+            background-color: var(--primary-accent);
+            color: #fff;
+            padding: 1rem 2.5rem;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(255, 71, 87, 0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+            cursor: pointer;
+        }
 
-.menu li a {
-    color: #fff;
-    text-decoration: none;
-    background-color: rgba(255,255,255,0.08);
-    padding: 8px 15px;
-    font-size: 18px;
-    border-radius: 8px;
-    transition: all 0.18s;
-}
+        .hero-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 71, 87, 0.6);
+            background-color: #ff6b81;
+        }
 
-.menu li a:hover {
-    background-color: rgba(255,255,255,0.2);
-    transform: translateY(-2px);
-}
+        /* --- SEÇÃO DE FORMULÁRIOS (Cards) --- */
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .section-header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
 
-.logo-item .logo {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    border: 2px solid #fff;
-}
+        .grid-forms {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 5rem;
+        }
 
-.auth-links {
-    display: flex;
-    gap: 1.2rem;
-}
+        .form-card {
+            background: var(--card-bg);
+            padding: 2.5rem 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border-bottom: 5px solid transparent;
+            text-decoration: none;
+            color: #333;
+            display: block; /* Para o link funcionar no card todo */
+        }
 
-.auth-links a {
-    color: #fff;
-    font-weight: 700;
-    text-decoration: none;
-}
+        .form-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            border-bottom: 5px solid var(--primary-accent);
+        }
 
-.auth-links a:hover {
-    color: #ff4757;
-}
+        .icon-box {
+            width: 70px;
+            height: 70px;
+            background-color: #fff0f1;
+            color: var(--primary-accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem auto;
+            font-size: 1.8rem;
+        }
 
-/* CONTAINER */
-.container {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+        .form-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
 
-/* HERO */
-.hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
-        url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    border-radius: 0 0 30px 30px;
-    margin: -20px 20px 40px 20px;
-    padding: 4rem 2rem;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
+        .form-card p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
 
-.hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-}
+        /* --- SEÇÃO DE NOVIDADES --- */
+        .news-section {
+            background-color: #fff;
+            padding: 4rem 0;
+            margin-top: 2rem;
+        }
 
-.hero h1 span {
-    color: var(--primary-accent);
-}
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
 
-.hero p {
-    font-size: 1.3rem;
-    max-width: 700px;
-    margin: 0 auto 2rem;
-    color: #ddd;
-}
+        .news-card {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+            background-color: #fff;
+        }
 
-.hero-btn {
-    background-color: var(--primary-accent);
-    color: #fff;
-    padding: 1rem 2.5rem;
-    border-radius: 50px;
-    font-weight: bold;
-    text-decoration: none;
-    display: inline-block;
-}
+        .news-card:hover {
+            transform: scale(1.02);
+        }
 
-/* SECTION HEADER */
-.section-header {
-    text-align: center;
-    margin-bottom: 3rem;
-}
+        .news-image {
+            height: 200px;
+            background-color: #ddd;
+            background-size: cover;
+            background-position: center;
+        }
 
-.section-header h2 {
-    font-size: 2.5rem;
-    color: #333;
-}
+        .news-content {
+            padding: 1.5rem;
+        }
 
-.section-header p {
-    color: #666;
-}
+        .tag {
+            background-color: #333;
+            color: #fff;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
 
-/* CARDS */
-.grid-forms {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    margin-bottom: 5rem;
-}
+        .news-content h3 {
+            margin: 10px 0;
+            font-size: 1.2rem;
+            color: #222;
+        }
 
-.form-card {
-    background: var(--card-bg);
-    padding: 2rem;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    text-decoration: none;
-    color: #333;
-    transition: 0.3s;
-}
+        .news-content p {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
 
-.form-card:hover {
-    transform: translateY(-10px);
-}
+        .news-link {
+            color: var(--primary-accent);
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
 
-/* NEWS */
-.news-section {
-    background-color: #fff;
-    padding: 4rem 0;
-}
-
-.news-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.news-card {
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    background-color: #fff;
-}
-
-.news-image {
-    height: 200px;
-    background-size: cover;
-}
-
-.news-content {
-    padding: 1.5rem;
-}
-
-.news-content h3 {
-    margin: 10px 0;
-}
-
-.news-content p {
-    font-size: 0.9rem;
-    color: #555;
-}
-
-/* FOOTER */
-footer {
-    background-color: #000;
-    color: #fff;
-    padding: 3rem 0;
-    text-align: center;
-}
-
-/* RESPONSIVO */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .menu {
-        display: none;
-    }
-}
+        
