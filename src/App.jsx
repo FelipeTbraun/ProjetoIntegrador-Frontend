@@ -7,7 +7,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/forms" element={<Forms />} />
+        <Route path="/formularios" element={<Forms />} />
       </Routes>
     </BrowserRouter>
   );
