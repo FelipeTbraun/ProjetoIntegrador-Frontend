@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import "../styles/home.css"
+import "../styles/Home.css"
 import Footer from "../components/Footer";
 
 function Home() {

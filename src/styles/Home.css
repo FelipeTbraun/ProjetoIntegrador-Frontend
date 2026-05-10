@@ -8,37 +8,34 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f0f0f0;
             margin: 0;
-            padding-top: 120px; /* Espaço para a navbar fixa */
+            padding-top: 120px; 
         }
 
-        /* =========================================
-           NOVO CSS - HOME PAGE (ESTILO MODERNO)
-           ========================================= */
-
+      
         :root {
-            --primary-accent: #ff4757; /* Vermelho/Laranja para Ação (SOS) */
+            --primary-accent: #ff4757; 
             --dark-bg: #1e1e1e;
             --light-text: #f0f0f0;
             --card-bg: #ffffff;
         }
 
-        /* Container Global */
+      
         .container {
             max-width: 1300px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
-        /* --- HERO SECTION (Principal) --- */
+      
         .hero {
-            /* Imagem de fundo da cidade */
+           
             background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), 
                         url('https://images.adsttc.com/media/images/60d3/4ebd/5373/1456/acc3/9f3c/large_jpg/parque-ecologico-de-indaiatuba-visto-de-cima-sao-paulo-brasil-credito-erich-sacco.jpg?1624461036');
             background-size: cover;
             background-position: center;
             color: #fff;
-            border-radius: 0 0 30px 30px; /* Curva suave na parte inferior */
-            margin: -20px 20px 40px 20px; /* Ajuste para criar efeito de card flutuante */
+            border-radius: 0 0 30px 30px; 
+            margin: -20px 20px 40px 20px;
             padding: 4rem 2rem;
             text-align: center;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
@@ -87,7 +84,7 @@
             background-color: #ff6b81;
         }
 
-        /* --- SEÇÃO DE FORMULÁRIOS (Cards) --- */
+       
         .section-header {
             text-align: center;
             margin-bottom: 3rem;
@@ -122,7 +119,7 @@
             border-bottom: 5px solid transparent;
             text-decoration: none;
             color: #333;
-            display: block; /* Para o link funcionar no card todo */
+            display: block; 
         }
 
         .form-card:hover {
@@ -155,7 +152,7 @@
             line-height: 1.5;
         }
 
-        /* --- SEÇÃO DE NOVIDADES --- */
+       
         .news-section {
             background-color: #fff;
             padding: 4rem 0;

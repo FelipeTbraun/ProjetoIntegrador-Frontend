@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import "../styles/forms.css"
+import "../styles/Forms.css";
 
 function Forms(){
     return(
@@ -16,7 +16,11 @@ function Forms(){
         <div class="form-box">
             <form action="#" method="POST" enctype="multipart/form-data">
                 
+<<<<<<< HEAD
                
+=======
+             
+>>>>>>> 2c9d9ed (Parte do Sobre feita e com Id funcionando, so atualizar as informações agora)
                 <div class="form-row">
                     <div class="form-group">
                         <label for="nome"><i class="fa-solid fa-user"></i> Nome Completo</label>
@@ -52,7 +56,11 @@ function Forms(){
                     </div>
                 </div>
 
+<<<<<<< HEAD
                
+=======
+             
+>>>>>>> 2c9d9ed (Parte do Sobre feita e com Id funcionando, so atualizar as informações agora)
                 <div class="form-row">
                     <div class="form-group">
                         <label for="rua"><i class="fa-solid fa-location-dot"></i> Rua / Local</label>
@@ -64,7 +72,11 @@ function Forms(){
                     </div>
                 </div>
 
+<<<<<<< HEAD
                
+=======
+              
+>>>>>>> 2c9d9ed (Parte do Sobre feita e com Id funcionando, so atualizar as informações agora)
                 <div class="form-group">
                     <label for="data"><i class="fa-solid fa-calendar-days"></i> Data do Ocorrido</label>
                     <input type="date" id="data" name="data" required/>
@@ -76,7 +88,11 @@ function Forms(){
                     <textarea id="descricao" name="descricao" placeholder="Descreva o que aconteceu, pontos de referência, etc..." required></textarea>
                 </div>
 
+<<<<<<< HEAD
                
+=======
+             
+>>>>>>> 2c9d9ed (Parte do Sobre feita e com Id funcionando, so atualizar as informações agora)
                 <div class="form-group">
                     <label><i class="fa-solid fa-camera"></i> Anexar Foto (Evidência)</label>
                     <div class="file-upload-wrapper">
@@ -88,6 +104,10 @@ function Forms(){
                     </div>
                 </div>
 
+<<<<<<< HEAD
+=======
+               
+>>>>>>> 2c9d9ed (Parte do Sobre feita e com Id funcionando, so atualizar as informações agora)
                 <button type="submit" class="btn-submit">
                     <i class="fa-solid fa-paper-plane"></i> Enviar Formulário
                 </button>
@@ -95,6 +115,11 @@ function Forms(){
             </form>
         </div>
     </div>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 2c9d9ed (Parte do Sobre feita e com Id funcionando, so atualizar as informações agora)
   </>
     );
 }

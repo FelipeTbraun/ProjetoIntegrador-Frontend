@@ -1,5 +1,5 @@
 import logo from "../assets/indaiatuba.webp";
-import "../styles/navbar.css";
+import "../styles/Navbar.css";
 function Navbar() {
   return (
     <nav className="topo">
@@ -11,7 +11,7 @@ function Navbar() {
 
         <ul className="menu">
           <li><a href="/">Home</a></li>
-          <li><a href="/formularios">Formulários</a></li>
+          <li><a href="/forms">Formulários</a></li>
 
           <li className="logo-item">
             <img
