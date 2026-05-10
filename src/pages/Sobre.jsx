@@ -6,7 +6,7 @@ function Sobre() {
   const teamMembers = [
     {
       id: 1,
-      name: "Alice Johnson",
+      name: "Felipe Tavares Braun",
       role: "Frontend Developer",
       formation: "React, JavaScript, CSS",
       initials: "AJ",
@@ -17,7 +17,7 @@ function Sobre() {
     },
     {
       id: 2,
-      name: "Bruno Silva",
+      name: "Felipe Yanagui Geraldo",
       role: "Backend Developer",
       formation: "Node.js, MongoDB, API REST",
       initials: "BS",
@@ -28,7 +28,7 @@ function Sobre() {
     },
     {
       id: 3,
-      name: "Carlos Pereira",
+      name: "Igor Alves Lemes",
       role: "Full Stack",
       formation: "React, Node.js, Design",
       initials: "CP",
@@ -39,7 +39,7 @@ function Sobre() {
     },
     {
       id: 4,
-      name: "Diana Ferreira",
+      name: "Eduardo Yoshida Reis",
       role: "UX/UI Designer",
       formation: "Figma, Design System, Prototipagem",
       initials: "DF",
@@ -50,7 +50,7 @@ function Sobre() {
     },
     {
       id: 5,
-      name: "Diana Ferreira",
+      name: "Maiara Macedo",
       role: "UX/UI Designer",
       formation: "Figma, Design System, Prototipagem",
       initials: "DF",
@@ -58,18 +58,7 @@ function Sobre() {
       photo: "https://via.placeholder.com/90?text=DF",
       github: "https://github.com",
       linkedin: "https://linkedin.com",
-    },
-    {
-      id: 6,
-      name: "Diana Ferreira",
-      role: "UX/UI Designer",
-      formation: "Figma, Design System, Prototipagem",
-      initials: "DF",
-      avatarClass: "dark",
-      photo: "https://via.placeholder.com/90?text=DF", 
-      github: "https://github.com",
-      linkedin: "https://linkedin.com",
-    },
+    }
   ];
   return (
     <>
